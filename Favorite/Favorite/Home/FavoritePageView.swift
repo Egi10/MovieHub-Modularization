@@ -1,18 +1,20 @@
 //
 //  FavoritePageView.swift
-//  MovieHub
+//  Favorite
 //
-//  Created by Julsapargi Nursam on 20/03/23.
+//  Created by Julsapargi Nursam on 09/04/23.
 //
 
 import SwiftUI
 
-struct FavoritePageView: View {
+public struct FavoritePageView: View {
+    public init() {}
+    
     @EnvironmentObject var viewModel: FavoriteViewModel
     
     private var gridItemLayout = Array(repeating: GridItem(.flexible(), spacing: 10), count: 2)
     
-    var body: some View {
+    public var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
                 Text("Favorite List")
@@ -31,7 +33,7 @@ struct FavoritePageView: View {
                         LazyVGrid(columns: gridItemLayout) {
                             ForEach(data, id: \.self) { movie in
                                 NavigationLink {
-                                    let dependencies = AppDependencies.shared
+                                    let dependencies = FavoriteDependencies.shared
                                     
                                     DetailFavoritePageView(
                                         idMovie: movie.id,
@@ -69,6 +71,6 @@ struct FavoritePageView: View {
 struct FavoritePageView_Previews: PreviewProvider {
     static var previews: some View {
         FavoritePageView()
-            .environmentObject(AppDependencies.shared.favoriteViewModel)
+            .environmentObject(FavoriteDependencies.shared.favoriteViewModel)
     }
 }

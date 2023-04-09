@@ -1,8 +1,8 @@
 //
 //  DetailFavoriteViewModel.swift
-//  MovieHub
+//  Favorite
 //
-//  Created by Julsapargi Nursam on 21/03/23.
+//  Created by Julsapargi Nursam on 09/04/23.
 //
 
 import Foundation

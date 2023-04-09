@@ -8,10 +8,11 @@
 import SwiftUI
 import Profile
 import Home
+import Favorite
 
 struct DashboardPageView: View {
     var body: some View {
-        let dependencies = AppDependencies.shared
+        let favoriteDependencies = FavoriteDependencies.shared
         let homeDependencies = HomeDependencies.shared
         
         TabView {
@@ -22,7 +23,7 @@ struct DashboardPageView: View {
                 }
             
             FavoritePageView()
-                .environmentObject(dependencies.favoriteViewModel)
+                .environmentObject(favoriteDependencies.favoriteViewModel)
                 .tabItem {
                     Label("Favorite", systemImage: "heart")
                 }

@@ -10,6 +10,12 @@
 		1B9B87F19FFDF59EA3D57D5D /* Pods_Favorite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3EEB02DF5CD40EDD3700A2 /* Pods_Favorite.framework */; };
 		440CB07B29E2951E0071CDDC /* Favorite.docc in Sources */ = {isa = PBXBuildFile; fileRef = 440CB07A29E2951E0071CDDC /* Favorite.docc */; };
 		440CB07C29E2951E0071CDDC /* Favorite.h in Headers */ = {isa = PBXBuildFile; fileRef = 440CB07929E2951E0071CDDC /* Favorite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		440CB0F629E2B8F90071CDDC /* MovieFavoriteItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CB0F529E2B8F90071CDDC /* MovieFavoriteItemView.swift */; };
+		440CB0F829E2B90C0071CDDC /* FavoritePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CB0F729E2B90C0071CDDC /* FavoritePageView.swift */; };
+		440CB0FA29E2B91C0071CDDC /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CB0F929E2B91C0071CDDC /* FavoriteViewModel.swift */; };
+		440CB0FC29E2B9560071CDDC /* DetailFavoritePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CB0FB29E2B9560071CDDC /* DetailFavoritePageView.swift */; };
+		440CB0FE29E2B97F0071CDDC /* DetailFavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CB0FD29E2B97F0071CDDC /* DetailFavoriteViewModel.swift */; };
+		440CB10129E2B9D40071CDDC /* FavoriteDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440CB10029E2B9D40071CDDC /* FavoriteDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +23,12 @@
 		440CB07629E2951E0071CDDC /* Favorite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Favorite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		440CB07929E2951E0071CDDC /* Favorite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Favorite.h; sourceTree = "<group>"; };
 		440CB07A29E2951E0071CDDC /* Favorite.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Favorite.docc; sourceTree = "<group>"; };
+		440CB0F529E2B8F90071CDDC /* MovieFavoriteItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFavoriteItemView.swift; sourceTree = "<group>"; };
+		440CB0F729E2B90C0071CDDC /* FavoritePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePageView.swift; sourceTree = "<group>"; };
+		440CB0F929E2B91C0071CDDC /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		440CB0FB29E2B9560071CDDC /* DetailFavoritePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFavoritePageView.swift; sourceTree = "<group>"; };
+		440CB0FD29E2B97F0071CDDC /* DetailFavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFavoriteViewModel.swift; sourceTree = "<group>"; };
+		440CB10029E2B9D40071CDDC /* FavoriteDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDependencies.swift; sourceTree = "<group>"; };
 		A07038D5DD90B75CAA9CDCA5 /* Pods-Favorite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favorite.debug.xcconfig"; path = "Target Support Files/Pods-Favorite/Pods-Favorite.debug.xcconfig"; sourceTree = "<group>"; };
 		C9F3223D4464CC6F5DBEA372 /* Pods-Favorite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favorite.release.xcconfig"; path = "Target Support Files/Pods-Favorite/Pods-Favorite.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,10 +66,48 @@
 		440CB07829E2951E0071CDDC /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				440CB0FF29E2B9C40071CDDC /* Di */,
+				440CB0F329E2B8CE0071CDDC /* Detail */,
+				440CB0F229E2B8C80071CDDC /* Home */,
 				440CB07929E2951E0071CDDC /* Favorite.h */,
 				440CB07A29E2951E0071CDDC /* Favorite.docc */,
 			);
 			path = Favorite;
+			sourceTree = "<group>";
+		};
+		440CB0F229E2B8C80071CDDC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				440CB0F429E2B8D80071CDDC /* View */,
+				440CB0F729E2B90C0071CDDC /* FavoritePageView.swift */,
+				440CB0F929E2B91C0071CDDC /* FavoriteViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		440CB0F329E2B8CE0071CDDC /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				440CB0FB29E2B9560071CDDC /* DetailFavoritePageView.swift */,
+				440CB0FD29E2B97F0071CDDC /* DetailFavoriteViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		440CB0F429E2B8D80071CDDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				440CB0F529E2B8F90071CDDC /* MovieFavoriteItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		440CB0FF29E2B9C40071CDDC /* Di */ = {
+			isa = PBXGroup;
+			children = (
+				440CB10029E2B9D40071CDDC /* FavoriteDependencies.swift */,
+			);
+			path = Di;
 			sourceTree = "<group>";
 		};
 		9AF6F4F9F3E616F08995BAED /* Pods */ = {
@@ -183,6 +233,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440CB10129E2B9D40071CDDC /* FavoriteDependencies.swift in Sources */,
+				440CB0F829E2B90C0071CDDC /* FavoritePageView.swift in Sources */,
+				440CB0FE29E2B97F0071CDDC /* DetailFavoriteViewModel.swift in Sources */,
+				440CB0F629E2B8F90071CDDC /* MovieFavoriteItemView.swift in Sources */,
+				440CB0FC29E2B9560071CDDC /* DetailFavoritePageView.swift in Sources */,
+				440CB0FA29E2B91C0071CDDC /* FavoriteViewModel.swift in Sources */,
 				440CB07B29E2951E0071CDDC /* Favorite.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

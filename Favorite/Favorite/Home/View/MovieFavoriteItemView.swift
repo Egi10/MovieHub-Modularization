@@ -1,8 +1,8 @@
 //
-//  GameFavoriteItemView.swift
-//  MovieHub
+//  MovieFavoriteItemView.swift
+//  Favorite
 //
-//  Created by Julsapargi Nursam on 21/03/23.
+//  Created by Julsapargi Nursam on 09/04/23.
 //
 
 import SwiftUI

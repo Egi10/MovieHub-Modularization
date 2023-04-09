@@ -1,21 +1,20 @@
 //
-//  AppDependencies.swift
-//  MovieHub
+//  FavoriteDependencies.swift
+//  Favorite
 //
-//  Created by Julsapargi Nursam on 20/03/23.
+//  Created by Julsapargi Nursam on 09/04/23.
 //
 
 import Foundation
-import Swinject
-import RealmSwift
 import Core
+import Swinject
 
-class AppDependencies {
-    static let shared = AppDependencies()
+public class FavoriteDependencies {
+    public static let shared = FavoriteDependencies()
     
     // ViewModel
     let detailFavoriteViewModel: DetailFavoriteViewModel
-    let favoriteViewModel: FavoriteViewModel
+    public let favoriteViewModel: FavoriteViewModel
     
     private init() {
         let container = Container()
