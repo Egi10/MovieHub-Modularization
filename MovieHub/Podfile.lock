@@ -1,0 +1,61 @@
+PODS:
+  - Alamofire (5.6.4)
+  - Core (1.0.4):
+    - Alamofire
+    - RealmSwift (~> 10)
+    - Swinject
+  - netfox (1.21.0)
+  - Realm (10.36.0):
+    - Realm/Headers (= 10.36.0)
+  - Realm/Headers (10.36.0)
+  - RealmSwift (10.36.0):
+    - Realm (= 10.36.0)
+  - SDWebImage (5.14.2):
+    - SDWebImage/Core (= 5.14.2)
+  - SDWebImage/Core (5.14.2)
+  - SDWebImageSwiftUI (2.2.1):
+    - SDWebImage (~> 5.10)
+  - Swinject (2.8.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - Core (= 1.0.4)
+  - netfox (from `https://github.com/kasketis/netfox.git`, branch `master`)
+  - RealmSwift (~> 10)
+  - SDWebImageSwiftUI
+  - Swinject
+
+SPEC REPOS:
+  https://github.com/Egi10/MovieHub-CorePodSpecs-Module:
+    - Core
+  trunk:
+    - Alamofire
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - SDWebImageSwiftUI
+    - Swinject
+
+EXTERNAL SOURCES:
+  netfox:
+    :branch: master
+    :git: https://github.com/kasketis/netfox.git
+
+CHECKOUT OPTIONS:
+  netfox:
+    :commit: dd1f27a1427995e4a566590d823c93340cd158f1
+    :git: https://github.com/kasketis/netfox.git
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Core: 750614d070ecd6982649f2b1464728c08549c668
+  netfox: 9d5cc727fe7576c4c7688a2504618a156b7d44b7
+  Realm: 3fd136cb4c83a927482a7f1612496d37beed3cf5
+  RealmSwift: 513d4dcbf5bfc4d573454088b592685fc48dd716
+  SDWebImage: b9a731e1d6307f44ca703b3976d18c24ca561e84
+  SDWebImageSwiftUI: 2ecf5ab6f574526326b10ecb155e72a88059d0f0
+  Swinject: 893c9a543000ac2f10ee4cbaf0933c6992c935d5
+
+PODFILE CHECKSUM: 6395fae29fb80c9d72cf77a79ed70c87136c3f12
+
+COCOAPODS: 1.11.3

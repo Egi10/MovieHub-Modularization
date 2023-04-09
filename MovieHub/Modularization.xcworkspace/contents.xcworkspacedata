@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../Favorite/Favorite.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Home/Home.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MovieHub.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Profile/Profile.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Common/Common.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Component/Component.xcodeproj">
+   </FileRef>
+</Workspace>

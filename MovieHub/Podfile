@@ -1,0 +1,41 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.1'
+source 'https://github.com/Egi10/MovieHub-CorePodSpecs-Module'
+
+use_frameworks!
+workspace 'Modularization'
+
+def shared_pods
+  pod 'Alamofire'
+  pod 'SDWebImageSwiftUI'
+  pod 'RealmSwift', '~>10'
+  pod 'Swinject'
+  pod 'Core', '1.0.4'
+  pod 'netfox', :git => 'https://github.com/kasketis/netfox.git', :branch => 'master'
+end
+
+target 'MovieHub' do
+  shared_pods
+end
+
+target 'Home' do
+  shared_pods
+  project '../Home/Home'
+end
+
+target 'Favorite' do
+  shared_pods
+  project '../Favorite/Favorite'
+end
+
+target 'Profile' do
+  project '../Profile/Profile'
+end
+
+target 'Common' do
+  project '../Common/Common'
+end
+
+target 'Component' do
+  project '../Component/Component'
+end
